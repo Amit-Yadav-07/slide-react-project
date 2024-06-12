@@ -1,0 +1,127 @@
+::before,
+::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.carousel-container {
+  /* background-color: whitesmoke; */
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slide {
+  /* background-color: white;
+  box-shadow: 0px 0px 10px 0px blueviolet; */
+  width: 90%;
+  padding: 0rem 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-transform: capitalize;
+  position: absolute;
+  transition: all 0.4s linear;
+  overflow: hidden;
+}
+
+.slide-img {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin: 1rem 0px;
+  object-fit: cover;
+  border: 2px solid rgb(184, 155, 211);
+  box-shadow: 0px 0px 15px 0px blueviolet;
+}
+
+.name {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: blueviolet;
+}
+
+.title {
+  margin: 0.5rem 0px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.quote-icon {
+  margin: 1rem 0px;
+  font-size: 3rem;
+  color: blueviolet;
+}
+
+.btn {
+  position: absolute;
+  background-color: rgb(144, 142, 142);
+  font-size: 1.8rem;
+  padding: 5px;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+}
+
+.left-btn {
+  left: 5%;
+}
+
+.right-btn {
+  right: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .slide {
+    width: 50%;
+  }
+
+  .left-btn {
+    left: 25%;
+  }
+
+  .right-btn {
+    right: 25%;
+  }
+}
+
+/* ======================= slick ============================ */
+
+.slick-container {
+  height: 200px;
+  /* background-color: blueviolet; */
+  width: 70%;
+  margin: 10rem auto;
+}
+
+.slick-container div {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  background-color: red;
+  height: 100%;
+}
